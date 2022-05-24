@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+  <h2><%= title %></h2>
+  <form action="/puan" method="post">
+    <div class="form-group">
+      <label for="ad">Ad:</label>
+      <input type="text" class="form-control" id="ad" placeholder="İsim" name="ad" required>
+    </div>
+    <div class="soyad">
+        <label for="soyad">Soyad:</label>
+        <input type="text" class="form-control" id="soyad" placeholder="Soyad" name="soyad" required>
+    </div>
+    <div class="form-group">
+      <label for="telefon">Telefon:</label>
+      <input type="text" class="form-control" id="telefon" placeholder="Telefon Numarası" name="telefon" required>
+    </div>
+    <div class="form-group">
+        <label for="mail">Email:</label>
+        <input type="email" class="form-control" id="mail" placeholder="Mail Adresi" name="mail" required>
+    </div>
+    <div class="sehir">
+        <label for="sehir">Yaşadığı Şehir:</label>
+        <input type="text" class="form-control" id="sehir" placeholder="Yaşadığı Şehir" name="sehir" required>
+    </div>
+    <div class="universite">
+        <label for="universite">Üniversite:</label>
+        <input type="text" class="form-control" id="universite" placeholder="Üniversite" name="universite" required>
+    </div>
+    <div class="alan">
+        <label for="universite">Bölüm:</label>
+        <input type="text" class="form-control" id="alan" placeholder="Bölüm" name="alan" required>
+    </div>
+    <div class="sinif">
+        <label for="universite">Sınıf:</label>
+        <input type="text" class="form-control" id="sinif" placeholder="Sınıf" name="sinif" required>
+    </div>
+    <div class="staj_süresi">
+        <label for="universite">Staj Süresi:</label>
+        <input type="text" class="form-control" id="staj_süresi" placeholder="Staj Süresi" name="staj_süresi" required>
+    </div>
+    <button type="submit" class="btn btn-primary"   onclick="alert('Başvurunuz Alınmıştır')" >Submit</button>
+  </form>
+</div>
+ 
+</body>
+</html>
